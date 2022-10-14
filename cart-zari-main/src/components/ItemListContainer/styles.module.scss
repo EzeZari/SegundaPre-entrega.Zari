@@ -6,12 +6,7 @@
   grid-column-gap: 75px;
   justify-items: center;
   justify-content: center;
-  
-.productsContainer:hover .product:hover{
-border: 6px solid rgba(123, 123, 237, 0.51);
-}
-
-
+  padding-bottom: 50px;
 
   .product {
     width: 200px;
@@ -20,8 +15,6 @@ border: 6px solid rgba(123, 123, 237, 0.51);
     align-items: center;
     justify-content: center;
     gap: 10px;
-    
-   
 
     img {
       cursor: pointer;
@@ -41,10 +34,20 @@ border: 6px solid rgba(123, 123, 237, 0.51);
       border-radius: 3px;
       padding: 5px 10px;
       cursor: pointer;
+      border: 2px solid transparent;
     }
 
     button:hover {
+      transition-duration: .3s;
       background-color: #cecece;
+      border: 2px solid rgba(123, 123, 237, 0.51);
     }
   }
+}
+
+.title {
+  text-align: center;
+  padding: 1rem ;
+  font-weight: bold;
+  text-transform: capitalize;
 }

@@ -14,7 +14,7 @@ const Products = () => {
       {ProductsData.map((product, i) => (
         <div className={styles.product} key={i}>
           <img
-            onClick={() => navigate(`/${product.id}`)}
+            onClick={() => navigate(`Items/${product.id}`)}
             src={product.img}
             alt={product.name}
           />

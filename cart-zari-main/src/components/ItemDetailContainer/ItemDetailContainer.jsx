@@ -24,7 +24,7 @@ const ProductDetail = () => {
 
   return (
     <div className={styles.detail}>
-      <Link to="/">Volver a la Home</Link>
+      <Link to="/">Volver al Inicio</Link>
       <div className={styles.product}>
         <img src={product?.img} alt="product" />
         <div className={styles.data}>

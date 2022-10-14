@@ -6,6 +6,7 @@ import ProductDetail from "./components/ItemDetailContainer/ItemDetailContainer"
 
 import "./App.scss";
 import Cart from "./components/Cart";
+import Navbar from "./components/Navegacion/Navbar";
 
 const App = () => {
   /* Envolvemos la home con el provider del context */
@@ -14,10 +15,11 @@ const App = () => {
     
     <CartProvider>
       <BrowserRouter>
-        <Cart />
+      <Navbar/>
+      <Cart />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/:productId" element={<ProductDetail />} />
+          <Route path="Items/:productId" element={<ProductDetail />} />
         </Routes>
       </BrowserRouter>
     </CartProvider>

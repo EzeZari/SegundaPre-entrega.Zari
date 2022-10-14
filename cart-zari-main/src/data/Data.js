@@ -17,8 +17,8 @@ export const ProductsData = [
     id: 3,
     price: 21000,
     amount: 0,
-    name: "Nike Phantom Venom",
-    img: "https://www.futbolemotion.com/imagescms/postblogs/18600/grandes/blog-toda-la-gama-nike-phantom-venom-elite.jpg",
+    name: "Air Jordan 11",
+    img: "https://cdn.shopify.com/s/files/1/2358/2817/products/Air-Jordan-11-Retro-Cool-Grey-_2021_-CT8012-005-1_600x.png?v=1638294993",
   },
   {
     id: 4,
@@ -31,8 +31,8 @@ export const ProductsData = [
     id: 5,
     price: 19000,
     amount: 0,
-    name: "Puma Future Z",
-    img: "https://www.futbolemotion.com/imagesarticulos/151859/grandes/bota-puma-future-z-2.1-fgag-negro-0.jpg",
+    name: "Nike Jordan 1",
+    img: "https://cdn.shopify.com/s/files/1/0496/4325/8009/products/baskets-air-jordan-1-retro-high-og-hyper-royal-air-jordan-kikikickz-741519.jpg?v=1617108157",
   },
   {
     id: 6,
@@ -41,4 +41,28 @@ export const ProductsData = [
     name: "Adidas Nemeziz ",
     img: "https://www.futbolemotion.com/imagesarticulos/153013/grandes/bota-adidas-nemeziz-fg-negro-0.jpg",
   },
+  {
+    id: 7,
+    price: 20000,
+    amount: 0,
+    name: "Air Force 1",
+    img: "https://essential.vtexassets.com/arquivos/ids/464866-800-auto?v=637661152319700000&width=800&height=auto&aspect=true",
+  },
+
+  {
+    id: 8,
+    price: 16000,
+    amount: 0,
+    name: "Air Max 90",
+    img: "https://essential.vtexassets.com/arquivos/ids/467758/316-0124_1.jpg?v=637672177702770000",
+  },
+
+  {
+    id: 9,
+    price: 19000,
+    amount: 0,
+    name: "Puma Future Z",
+    img: "https://www.futbolemotion.com/imagesarticulos/151859/grandes/bota-puma-future-z-2.1-fgag-negro-0.jpg",
+  },
+  
 ];

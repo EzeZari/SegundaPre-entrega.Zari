@@ -2,6 +2,10 @@ import { useContext, useEffect, useState } from "react";
 import { ItemCart } from "../ItemCart";
 import CartContext from "../../context/CartContext";
 import styles from "./styles.module.scss";
+import { Link } from "react-router-dom";
+
+
+
 
 const Cart = () => {
   /* Creamos 2 estados, uno para ver si el carrito esta abierto o no 
@@ -10,7 +14,7 @@ const Cart = () => {
   const [productsLength, setProductsLength] = useState(0);
 
   /* Traemos del context los productos del carrito */
-  const { cartItems } = useContext(CartContext);
+  const { cartItems,clearCart  } = useContext(CartContext);
 
   /* Cada vez que se modifica el carrito, actualizamos la cantidad de productos */
   useEffect(() => {
@@ -25,6 +29,12 @@ const Cart = () => {
     0
   );
 
+ /*  const esconderCarrito =(checked) =>{       ESTABA PROBANDO 
+    setCartOpen= false;
+    cartItems = false;
+    Cart = false;
+    document.getElementById ("cart").style.display="none"
+  } */
   return (
     <div className={styles.cartContainer}>
       <div
@@ -78,7 +88,7 @@ const Cart = () => {
           <h2>Tu carrito</h2>
 
           {cartItems.length === 0 ? (
-            <p className={styles.cartVacio}>Tu carrito esta vacio</p>
+            <p className={styles.cartVacio}>(Tu carrito esta vacio)</p>
           ) : (
             <div className={styles.productsContainer}>
               {cartItems.map((item, i) => (
@@ -88,6 +98,12 @@ const Cart = () => {
           )}
 
           <h2 className={styles.total}>Total: ${total}</h2>
+          
+          {/* Si quiero cambiar la ruta, cambio desde aca y desde app.jsx */}
+          {cartItems.length > 0 && <Link to="/ItemsSeleccionados"  className={styles.btnfinalizar}> Finalizar Carrito</Link>} 
+          {cartItems.length > 0 && <button onClick={clearCart} className={styles.Borrartd}> Borrar Todo</button>}
+      
+
         </div>
       )}
     </div>

@@ -36,9 +36,12 @@
 
     .add {
       display: flex;
-      align-items: center;
       margin: 1rem 0;
       gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: flex-start;
 
       button {
         border: none;

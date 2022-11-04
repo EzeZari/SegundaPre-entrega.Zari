@@ -17,6 +17,8 @@ export const CartProvider = ({ children }) => {
     }
   });
 
+  const clearCart=()=> setCartItems([]);
+
   /* Cada vez que se actualize el carrito seteamos el local storage para guardar los productos */
   useEffect(() => {
     localStorage.setItem("cartProducts", JSON.stringify(cartItems));
@@ -73,7 +75,7 @@ export const CartProvider = ({ children }) => {
   return (
     /* Envolvemos el children con el provider y le pasamos un objeto con las propiedades que necesitamos por value */
     <CartContext.Provider
-      value={{ cartItems, AddItemToCart, DeleteItemToCart }}
+      value={{ cartItems, AddItemToCart, DeleteItemToCart,clearCart }}
     >
       {children}
     </CartContext.Provider>

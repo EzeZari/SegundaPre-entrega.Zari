@@ -32,7 +32,7 @@ const ProductDetail = () => {
           <div className={styles.add}>
             <p>
               Precio: <b>${product?.price}</b>
-            </p>
+            </p> 
             <button onClick={() => AddItemToCart(product)}>Añadir al carrito</button>
           </div>
         </div>

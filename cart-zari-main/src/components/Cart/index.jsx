@@ -3,6 +3,7 @@ import { ItemCart } from "../ItemCart";
 import CartContext from "../../context/CartContext";
 import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
+import { Pathname, useLocation } from "react-router";
 
 
 
@@ -29,15 +30,14 @@ const Cart = () => {
     0
   );
 
- /*  const esconderCarrito =(checked) =>{       ESTABA PROBANDO 
-    setCartOpen= false;
-    cartItems = false;
-    Cart = false;
-    document.getElementById ("cart").style.display="none"
-  } */
+const {pathname} = useLocation();
+
   return (
+    pathname!=="/MensajeFinal" &&
+    pathname!=="/ItemsSeleccionados" &&
+    pathname!=="/Checkout" &&(
     <div className={styles.cartContainer}>
-      <div
+      <div 
         onClick={() => setCartOpen(!cartOpen)}
         className={styles.buttonCartContainer}
       >
@@ -107,6 +107,7 @@ const Cart = () => {
         </div>
       )}
     </div>
+     )
   );
 };
 

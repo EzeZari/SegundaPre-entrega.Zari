@@ -26,6 +26,8 @@ font-size: 75px;
 }
 
 .btnVolver{
+    width: 25%;
+    margin: 0 auto;
 	color: white;
     background-color: black;
     border: none;

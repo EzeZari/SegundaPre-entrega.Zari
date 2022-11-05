@@ -1,11 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faStore} from '@fortawesome/free-solid-svg-icons';
+
 
 const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
+        <FontAwesomeIcon style={{ 
+          color: "white",
+          height: "25px",
+          padding: "6px" } } icon={faStore}/>
           <Link className="navbar-brand" to="/">
             Tienda Zari{" "}
           </Link>
@@ -39,7 +46,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/Contacto">
-                  Contacto
+                  
                 </Link>
               </li>
             </ul>

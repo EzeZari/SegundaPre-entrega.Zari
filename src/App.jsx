@@ -7,6 +7,9 @@ import ProductDetail from "./components/ItemDetailContainer/ItemDetailContainer"
 import "./App.scss";
 import Cart from "./components/Cart";
 import Navbar from "./components/Navegacion/Navbar";
+import Checkout from "./components/Checkout/Checkout";
+import ItemsSeleccionados from "./components/ItemsSeleccionados/ItemsSeleccionados";
+import MensajeFinal from "./components/Checkout/MensajeFinal";
 
 const App = () => {
   /* Envolvemos la home con el provider del context */
@@ -20,6 +23,9 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="Item/:productId" element={<ProductDetail />} />
+          <Route path="Checkout" element={<Checkout />} />
+          <Route path="ItemsSeleccionados" element={<ItemsSeleccionados />} />
+          <Route path="MensajeFinal" element={< MensajeFinal/>} />
           {/* <Route path=":productCategory/:productId" element={<ProductDetail />} /> */}
         </Routes>
       </BrowserRouter>

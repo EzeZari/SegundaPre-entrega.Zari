@@ -1,0 +1,55 @@
+.FinalizarPedido {
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 18px;
+  padding: 11px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.FinalizarPedido:hover {
+  color: aliceblue;
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+.volver {
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  top: 90px;
+  padding: 1rem;
+}
+.volver:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.items {
+  margin: 1rem auto;
+  width: 90%;
+  color: white;
+}
+
+.botones {
+  width: 100%;
+  display: grid;
+  grid-column-gap: 14px;
+  padding-bottom: 45px;
+  justify-items: center;
+}
+
+.p{
+  color: white;
+}

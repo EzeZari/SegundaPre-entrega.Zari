@@ -10,6 +10,7 @@ export const ItemCart = ({ item }) => {
   const { id } = item;
 
   return (
+    
     <div className={styles.cartItem}>
       <img src={item.img} alt={item.name} />
       <div className={styles.dataContainer}>
